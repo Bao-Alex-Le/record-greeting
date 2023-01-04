@@ -1,0 +1,26 @@
+{
+  "name": "record-greeting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/storage": "^5.3.0",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "inputmask": "^5.0.7",
+    "jquery": "^3.6.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.0.0",
+    "twilio": "^3.50.0",
+    "xmlbuilder": "^15.1.1"
+  },
+  "devDependencies": {}
+}

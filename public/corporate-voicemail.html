@@ -1,0 +1,36 @@
+<body>
+  <form id="corporate-info">
+    <h2>Corporate voicemail</h2>
+    <div>
+      <label for="cphone">Company Phone</label>
+      <input type="tel" name="cphone" id="cphone">
+    </div>
+    <div>
+      <label for="system">Phone System</label>
+      <select type="text" name="system" id="system" class="corporate-systems">
+      </select>
+    </div>
+    <div>
+      <input type="radio" name="time" value="day" checked>
+      <label for="time-of-day">Day</label>
+      <input type="radio" name="time" value="night">
+      <label for="time-of-day">Night</label>
+    </div>
+    <div>
+      <label for="password">Corporate Voicemail Password</label>
+      <input type="number" name="password" id="password">
+    </div>
+    <div>
+      <label for="file">Choose File</label>
+      <input type="file" name="mp3" accept="audio/*" id="mp3">
+    </div>
+    <div>
+      <button id="submit" type="button">Submit</button>
+      <button id="cancel" type="button">Cancel</button>
+    </div>
+  </form>
+</body>
+
+<script src="./libraries/jquery/dist/jquery.js"></script>
+<script src="./scripts/formSubmission.js"></script>
+<script src="./scripts/main.js"></script>

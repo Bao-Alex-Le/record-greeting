@@ -1,0 +1,78 @@
+
+<form id="personal-info">
+  <h2>Personal voicemail</h2>
+  <div>
+    <label for="cphone">Company Phone</label>
+    <input type="tel" name="cphone" id="cphone">
+  </div>
+  <div>
+    <label for="system">Phone System</label>
+      <select type="text" name="system" id="system" class="personal-systems">
+    </select>
+  </div>
+  <div>
+    <label for="password">Personal voicemail password</label>
+    <input type="number" name="password" id="password">
+  </div>
+  <div>
+    <label for="extension">Extension</label>
+    <input type="number" name="extension" id="extension">
+  </div>
+  <div>
+    <label for="file">Choose File</label>
+    <input type="file" name="mp3" accept="audio/*" id="mp3">
+  </div>
+  <div>
+    <button id="submit" type="button">Submit</button>
+    <button id="cancel" type="button">Cancel</button>
+  </div>
+</form>
+
+
+<script src="./libraries/jquery/dist/jquery.js"></script>
+<script src="./libraries/inputmask/dist/jquery.inputmask.js"></script>
+
+<!--
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Record Personal Voicemail</title>
+    <link href="./styles/personal.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <form id="personal-info">
+      <h2>Personal voicemail</h2>
+      <div>
+        <label for="cphone">Company Phone</label>
+        <input type="tel" name="cphone" id="cphone">
+      </div>
+      <div>
+        <label for="system">Phone System</label>
+        <select type="text" name="system" id="system" class="personal-systems">
+        </select>
+      </div>
+      <div>
+        <label for="password">Personal voicemail password</label>
+        <input type="number" name="password" id="password">
+      </div>
+      <div>
+        <label for="extension">Extension</label>
+        <input type="number" name="extension" id="extension">
+      </div>
+      <div>
+        <label for="file">Choose File</label>
+        <input type="file" name="mp3" accept="audio/*" id="mp3">
+      </div>
+      <div>
+        <button id="submit" type="button">Submit</button>
+      </div>
+    </form>
+  </body>
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/inputmask/dist/jquery.inputmask.js"></script>
+  <script type="module" src="./scripts/loadSystems.js"></script>
+  <script src="./scripts/formSubmission.js"></script>
+</html>
+-->

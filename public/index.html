@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Record Greeting</title>
+    <link href="./styles/index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="logo" src="./images/phmg-logo.png"></img>
+    </header>
+
+    <main>
+
+      <div class="phone-image">
+      </div>
+
+      <div class="right">
+        <div class="set-voicemail">
+
+          <nav>
+            <ul>
+              <p class="set-greeting" href="#">Set a Greeting</p>
+              <p class="how-to" href="#">How to Use</p>
+            </ul>
+          </nav>
+
+          <div class="select">
+            <div class="home selected">
+              <h3>Select what voicemail you want to set</h3>
+              <div class="vm-options">
+                  <button id="individual-button" type="button">Individual</button>
+                  <button id="corporate-button" type="button">Corporate</button>
+              </div>
+            </div>
+
+            <div class="guide">
+              <ol>
+                <li>Select whether you want to set a voicemail for a personal or corporate machine</li>
+                <li>Fill in the information for the machine you want to set a voicemail for
+                  <ul>
+                    <li>Provide the password for your phone system</li>
+                    <li>Choose an audio file that you want to be used a voicemail</li>
+                    <li>Additionally personal machines require the owner's extension number</li>
+                  </ul>
+                </li>
+                <li>After clicking submit, a call will be made to your number. The call must be picked up if your system has no answering machine set up. Otherwise it can be left to ring until it is sent to the answering machine</li>
+                <li>Once a person or the answering machine has answered the call, the recording must be allowed to play fully to completion</li>
+              </ol>
+              <p>Your answering machine message has now been set!</p>
+            </div>
+
+            <form id="individual-form">
+              <h2>Individual voicemail</h2>
+
+              <div class="individual-box">
+
+                <div class="individual-labels">                
+                  <label for="cphone">Company Phone</label>
+                  <label for="system">Phone System</label>
+                  <label for="password">Voicemail password</label>
+                  <label for="extension">Extension</label>
+                  <label for="file">Choose File</label>
+                </div>
+
+                <div class="individual-inputs">
+                  <input type="tel" name="cphone" class="cphone">
+                  <select type="text" name="system" class="individual-systems"></select>
+                  <input type="number" name="password" class="password">
+                  <input type="number" name="extension" class="extension">
+                  <input type="file" name="mp3" accept="audio/*" class="mp3">
+                </div>
+
+              </div>
+
+              <div class="form-buttons">
+                <button class="submit individual" type="button">Submit</button>
+                <button class="cancel" type="button">Cancel</button>
+              </div>
+
+            </form>
+
+            <form id="corporate-form">
+              <h2>Corporate voicemail</h2>
+
+              <div class="corporate-box">
+
+                <div class="corporate-labels">                
+                  <label for="cphone">Company Phone</label>
+                  <label for="system">Phone System</label>
+                  <label for="time-of-day">Time of Day</label>
+                  <label for="password">Voicemail password</label>
+                  <label for="file">Choose File</label>
+                </div>
+
+                <div class="corporate-inputs">
+                  <input type="tel" name="cphone" class="cphone">
+                  <select type="text" name="system" class="corporate-systems"></select>
+                  <div class="times">
+                    <div class="day">
+                      <input type="radio" name="time" value="day" checked>
+                      <label for="time-of-day">Day</label>
+                    </div>
+                    <div class="night">
+                      <input type="radio" name="time" value="night">
+                      <label for="time-of-day">Night</label>
+                    </div>
+                  </div>
+                  <input type="number" name="password" class="password">
+                  <input type="file" name="mp3" accept="audio/*" class="mp3">
+                </div>
+
+              </div>
+
+              <div class="form-buttons">
+                <button class="submit corporate" type="button">Submit</button>
+                <button class="cancel" type="button">Cancel</button>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </body>
+
+  <script src="./libraries/jquery/dist/jquery.js"></script>
+  <script src="./libraries/inputmask/dist/jquery.inputmask.js"></script>
+  <script src="./scripts/main.js"></script>
+  <script type="module" src="./scripts/loadSystems.js"></script>
+  <script src="./scripts/formSubmission.js"></script>
+
+</html>
